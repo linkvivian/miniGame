@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf997dcf-e052-4389-8b0f-f5b1b2b14be3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/homePage.html" afterPath="$PROJECT_DIR$/html/homePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/sun.html" afterPath="$PROJECT_DIR$/html/sun.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sun.js" afterPath="$PROJECT_DIR$/js/sun.js" />
-    </list>
+    <list default="true" id="cf997dcf-e052-4389-8b0f-f5b1b2b14be3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="sun.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sun.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/sun.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -65,14 +61,14 @@
       <file leaf-file-name="sun.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/sun.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="941">
-              <caret line="190" column="16" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+            <state relative-caret-position="558">
+              <caret line="188" column="26" lean-forward="true" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="homePage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/homePage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -160,6 +156,7 @@
       <find>num</find>
       <find>scrollbarBox</find>
       <find>score</find>
+      <find>box</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -292,12 +289,12 @@
       <workItem from="1537332448529" duration="64991000" />
       <workItem from="1538133449421" duration="2414000" />
       <workItem from="1538214648682" duration="36025000" />
-      <workItem from="1538740965526" duration="37854000" />
+      <workItem from="1538740965526" duration="38301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141284000" />
+    <option name="totallyTimeSpent" value="141731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -606,22 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/sun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="941">
-          <caret line="190" column="16" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/homePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/gameOver.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -634,6 +615,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="188" column="26" lean-forward="true" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/homePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
