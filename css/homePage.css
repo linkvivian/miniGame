@@ -20,7 +20,7 @@ html{
     position: absolute;
     background: url("../image/scrollbar.png") no-repeat;
     background-size: 100% 100%;
-    top:7rem;
+    top:6.2rem;
     left:0;
     height: 1.5rem;
     line-height: 1.5rem;
@@ -38,7 +38,7 @@ html{
     background-size: 100% 100%;
     width: 61%;
     height: 21rem;
-    margin: 8.8rem auto 0.8rem;
+    margin:7.4rem auto 0.3rem;
 }
 
 #score{
