@@ -10,7 +10,7 @@ html{
 .content{
     position: absolute;
     width: 100vw;
-    height: 120vh;
+    height: 102vh;
     background: url("../image/temple.png") no-repeat;
     background-size: 100% 105%;
 }

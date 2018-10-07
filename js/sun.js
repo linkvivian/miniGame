@@ -47,7 +47,8 @@ new Vue({
 
         this.isMask = true
 
-        gameOver();
+        alert(this.score);
+        gameOver1();
       }
     },1000)
 
@@ -178,7 +179,7 @@ new Vue({
 
 
 //游戏结束后，传给馨哥三个参数
-function gameOver() {
+function gameOver1() {
   var url = 'https://h5.xizhuopt.com/game';
   $.ajax({
     type:'post',
