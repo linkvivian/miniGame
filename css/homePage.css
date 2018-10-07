@@ -5,13 +5,13 @@
 html{
     font-size: 16px;
     position: relative;
+    overflow-y: hidden;
 }
 /*首页*/
 .content{
     position: absolute;
     width: 100vw;
     height: 120vh;
-    overflow-y: hidden;
     position: relative;
     background: url("../image/temple.png") no-repeat;
     background-size: 100% 120%;
@@ -32,6 +32,7 @@ html{
     position: absolute;
     height: 100%;
     width: 100%;
+
 }
 .statue{
     background: url("../image/rainGod.png") no-repeat;
