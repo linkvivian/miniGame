@@ -14,7 +14,7 @@ html{
     overflow-y: hidden;
     position: relative;
     background: url("../image/temple.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 120%;
 }
 .scrollbar{
     position: absolute;
