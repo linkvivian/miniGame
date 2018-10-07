@@ -47,7 +47,6 @@ new Vue({
 
         this.isMask = true
 
-        alert(this.score);
         gameOver1();
       }
     },1000)
@@ -113,7 +112,6 @@ new Vue({
             if(this.sunPosition[i][0]!=-1){
               cxt.drawImage(sunImg, this.sunPosition[i][0], this.sunPosition[i][1])
             }
-
           }
         }
 
@@ -189,6 +187,7 @@ function gameOver1() {
       amount: this.score
     },
     success: function () {
+      alert(this.score)
       setCode();
     }
   })
@@ -199,6 +198,7 @@ function gameOver1() {
 // https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842（微信开发文档）
 //   打开授权页面
 function setCode() {
+  alert(1);
   var imagePage = 'https://h5.xizhuopt.com/picture';
   var pageUrl = imagePage
     .replace(/[/]/g, "%2f")
@@ -206,7 +206,7 @@ function setCode() {
     .replace(/[#]/g, "%23")
     .replace(/[&]/g, "%26")
     .replace(/[=]/g, "%3d");
-  var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +
+    var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +
     "wxd53f1cc22f392e66" + "&redirect_uri=" + pageUrl +
     "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect";
   window.location.href = url;
