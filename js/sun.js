@@ -59,9 +59,9 @@ new Vue({
       let canvasHeight = Math.floor(document.documentElement.clientHeight);
 
       //box重画
-      let boxImg = new Image()
-      boxImg.src = '../image/box3.png'
       function boxRedraw(){
+        let boxImg = new Image()
+        boxImg.src = '../image/box3.png'
         boxImg.onload = function(){
           cxt.drawImage(boxImg, canvasWidth-sun.boxWidth,canvasHeight-sun.boxHeight)
         }

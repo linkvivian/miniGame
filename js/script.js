@@ -17,12 +17,12 @@ function getScrollbar() {
           sunScore += userArr[h].amount;  //获取所有太阳数目和
         }
       }
-      console.log(rainScore,sunScore)
       //比分条
       compareScore(rainScore, sunScore);
 
       //计时器,2秒显示一条数据，总共20条
       var timer = setInterval(function myTimer(){
+        $('.scrollbarBox').addClass('animate');
         var lastTime = userArr[h].time;
         switch (true)
         {
@@ -52,7 +52,7 @@ function getScrollbar() {
           h = 0;
           getScrollbar();
         }
-      },3000);
+      }, 3000);
       //清除定时器
       function myStopFunction() {
         clearInterval(timer);

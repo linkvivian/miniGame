@@ -29,17 +29,17 @@ html{
 }
 .scrollbarBox{
     position: absolute;
-    top:0;
+    top:1.5rem;
     left:0;
     height: 1.5rem;
     width: 9.5rem;
     border-radius: 0.4rem;
     background-color: rgba(0,0,0,.3);
     color: white;
-    animation-delay: -3s;
+}
+.animate{
     animation: scroll 3s infinite linear;
     /*无限循环*/
-
 }
 /*滚动条动画*/
 @keyframes scroll
