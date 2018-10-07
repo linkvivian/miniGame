@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.mask,.beginBox{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(98,98,98,0.5);
+    z-index: 999;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+}
+.numberBox,.scoreBox{
+    position: absolute;
+    color: rgb(56,58,57);
+    top: 0;
+    margin-top: 50%;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+}
+.numberBox{
+    margin-top: 40%;
+}
+.gameBox{
+    position: relative;
+}
+#myCanvas{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+#canvasBgp{
+    background: url('../image/bg.png') no-repeat center;
+    background-size: 100% 100%;
+    height: 100%;
+}

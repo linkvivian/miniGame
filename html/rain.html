@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../css/rain.css" type="text/css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <title>求雨</title>
+</head>
+<body>
+<div id="profile">
+    <div id="drag">
+        <div class="time_down" id="sample">3</div>
+
+    </div>
+
+    <div id="guide">点击碗开始计时<br>拖动碗<br>收集雨水</div>
+    <div id="raindrop">
+
+        <div id="bowl" >
+            <img src="../image/wan.png" alt="">
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/rain.js"></script>
+<script>
+  //@flag为碗是否被拖动的状态
+  var flag = false;
+  var cur = {
+    x:0,
+    y:0
+  }
+  var nx,ny,dx,dy,x,y ;
+  function down(){
+    flag = true;
+    var touch ;
+    if(event.touches){
+      touch = event.touches[0];
+    }else {
+      touch = event;
+    }
+    cur.x = touch.clientX;
+    cur.y = touch.clientY;
+    dx = bowlDrag.offsetLeft;
+    dy = bowlDrag.offsetTop;
+  }
+  function move(){
+    if(flag){
+      var touch ;
+      if(event.touches){
+        touch = event.touches[0];
+      }else {
+        touch = event;
+      }
+      nx = touch.clientX - cur.x;
+      ny = touch.clientY - cur.y;
+      x = dx+nx;
+      y = dy+ny;
+      bowlDrag.style.left = x+"px";
+      //bowlDrag.style.top = y +"px";
+      //阻止页面的滑动默认事件
+      //document.addEventListener("touchmove",function(){
+      //    event.preventDefault();
+      //},false);
+    }
+  }
+  var bowlDrag = document.getElementById("bowl");
+  bowlDrag.addEventListener("mousedown",function(){
+    down();
+  },false);
+  bowlDrag.addEventListener("touchstart",function(){
+    down();
+  },false)
+  bowlDrag.addEventListener("mousemove",function(){
+    move();
+  },false);
+  bowlDrag.addEventListener("touchmove",function(){
+    move();
+  },false)
+  document.body.addEventListener("mouseup",function(){
+    flag = false;
+  },false);
+  bowlDrag.addEventListener("touchend",function(){
+    flag = false;
+  },false)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+body,div{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow: hidden;
+
+}
+#profile{
+    position: absolute;
+    background: url(../image/rainbackground.png) ;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+#drag{
+    position: relative;
+    /*background: #fff;*/
+    width: 46%;
+    /*height: 20%;*/
+    margin: 0 auto;
+    top: 20%;
+    z-index: 999;
+
+}
+#bowl{
+    position: absolute;
+    width:24% ;
+    /*border: 1px black solid;*/
+    display: inline-block;
+    text-align: center;
+    bottom: 0px;
+    /*background: #fff;*/
+    z-index: 100;
+}
+#bowl img{
+    width: 100%;
+}
+#sample{
+    height: 40%;
+    text-align: center;
+    font-size: 300%;
+}
+#guide{
+    text-align: center;
+    font-size: 150%;
+    font-weight: 500;
+    position: relative;
+    height: 10%;
+    top: 30%;
+
+}
+.com{
+    /*border-radius: 0 50% 50% 50%;
+    background: skyblue;
+    transform: rotate(45deg);*/
+    position: absolute;
+    top: 0;
+}
+#raindrop{
+    overflow: hidden;
+    width: 100%;
+    height: 72%;
+    z-index: 0;
+    /*background: #eee;*/
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

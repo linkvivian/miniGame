@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../css/sun.css" type="text/css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+    <title>种太阳</title>
+</head>
+<body>
+<div id="app">
+    <div class="beginBox" v-show='isBegin' @click='go()'>开始</div>
+    <div class="mask" v-show='isMask'>你捐赠了{{score}}个太阳</div>
+    <div class="gameBox" :style="screen" v-show='!isBegin'>
+        <canvas id="myCanvas">当前浏览器不支持canvas</canvas>
+        <div id="canvasBgp"></div>
+        <div class="numberBox" v-show='!isBegin' onselectstart="return false">time：{{number}}</div>
+        <div class="scoreBox" v-show='!isBegin' onselectstart="return false">score：{{score}}</div>
+    </div>
+</div>
+
+<script src="../js/sun.js"></script>
+
+</body>
+</html>
