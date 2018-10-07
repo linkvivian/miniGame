@@ -180,7 +180,6 @@ new Vue({
 //游戏结束后，传给馨哥三个参数
 function gameOver() {
   var url = 'https://h5.xizhuopt.com/game';
-  setCode();
   $.ajax({
     type:'post',
     url:url,
