@@ -5,7 +5,6 @@
 html{
     font-size: 16px;
     position: relative;
-    overflow-y: hidden;
 }
 /*首页*/
 .content{
@@ -14,7 +13,7 @@ html{
     height: 120vh;
     position: relative;
     background: url("../image/temple.png") no-repeat;
-    background-size: 100% 120%;
+    background-size: 100% 110%;
 }
 .scrollbar{
     position: absolute;
