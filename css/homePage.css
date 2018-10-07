@@ -27,7 +27,6 @@ html{
     text-align: center;
     width: 10rem;
     font-size: 0.7rem;
-    color: red;
 }
 .scrollbarBox{
     position: absolute;
@@ -38,7 +37,7 @@ html{
     background: url("../image/rainGod.png") no-repeat;
     background-size: 100% 100%;
     width: 56%;
-    height: 17rem;
+    height: 19rem;
     margin:7.4rem auto 0.3rem;
 }
 
