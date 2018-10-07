@@ -41,21 +41,18 @@ function getScrollbar() {
         //时间段
         if(userArr[h].type){
           $('.scrollbarBox').html(userArr[h].nickname + lastTime + '前祈雨' + userArr[h].amount + '点');
-          $(".scrollbarBox").slideDown(200);
           rainScore += userArr[h].amount;  //获取所有雨滴数目和
         }else {
           $('.scrollbarBox').html(userArr[h].nickname + lastTime + '前捐太阳' + userArr[h].amount + '个');
           sunScore += userArr[h].amount;  //获取所有太阳数目和
-          $(".scrollbarBox").slideDown(200);
         }
         h++;
-        $(".scrollbarBox").slideUp(800);
         if(h >= 20){
           myStopFunction();
           h = 0;
           getScrollbar();
         }
-      },1500);
+      },3000);
       //清除定时器
       function myStopFunction() {
         clearInterval(timer);

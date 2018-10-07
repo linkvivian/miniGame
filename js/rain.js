@@ -166,6 +166,7 @@ $(document).ready(function () {
   //游戏结束时，跳转到对应链接，生成图片
   function gameOver() {
   var url = 'https://h5.xizhuopt.com/game';
+
   $.ajax({
     type:'post',
     url:url,

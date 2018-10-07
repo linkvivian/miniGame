@@ -12,25 +12,42 @@ html{
     width: 100vw;
     height: 120vh;
     background: url("../image/temple.png") no-repeat;
-    background-size: 100% 110%;
+    background-size: 100% 105%;
 }
 .scrollbar{
     position: absolute;
-    background: url("../image/scrollbar.png") no-repeat;
-    background-size: 100% 100%;
     top:6.2rem;
-    left:0;
+    left:0.4rem;
     height: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
-    width: 10rem;
+    width: 9.5rem;
     font-size: 0.7rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    color: white;
 }
 .scrollbarBox{
     position: absolute;
-    height: 100%;
-    width: 100%;
+    top:0;
+    left:0;
+    height: 1.5rem;
+    width: 9.5rem;
+    border-radius: 0.4rem;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    animation-delay: -3s;
+    animation: scroll 3s infinite linear;
+    /*无限循环*/
 
+}
+/*滚动条动画*/
+@keyframes scroll
+{
+    0%   {top:1.5rem;}
+    10%  {top:0;}
+    80% {top:0;}
+    100% {top: -1.5rem;}
 }
 .statue{
     background: url("../image/rainGod.png") no-repeat;
