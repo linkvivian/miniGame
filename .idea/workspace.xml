@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf997dcf-e052-4389-8b0f-f5b1b2b14be3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/homePage.css" afterPath="$PROJECT_DIR$/css/homePage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/image.js" afterPath="$PROJECT_DIR$/js/image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sun.js" afterPath="$PROJECT_DIR$/js/sun.js" />
-    </list>
+    <list default="true" id="cf997dcf-e052-4389-8b0f-f5b1b2b14be3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,7 +17,7 @@
       <file leaf-file-name="sun.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/sun.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="69">
               <caret line="9" column="106" lean-forward="false" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
               <folding />
             </state>
@@ -65,7 +61,7 @@
       <file leaf-file-name="sun.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/sun.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="1024">
               <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
               <folding />
             </state>
@@ -79,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homePage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="homePage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/homePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="192">
               <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
@@ -99,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="image.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/image.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
@@ -156,9 +152,9 @@
       <find>score</find>
       <find>clearInterval</find>
       <find>timer2</find>
-      <find>game</find>
       <find>click</find>
       <find>scrollbarBox</find>
+      <find>game</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -291,16 +287,15 @@
       <workItem from="1537332448529" duration="64991000" />
       <workItem from="1538133449421" duration="2414000" />
       <workItem from="1538214648682" duration="36025000" />
-      <workItem from="1538740965526" duration="49898000" />
+      <workItem from="1538740965526" duration="51292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153328000" />
+    <option name="totallyTimeSpent" value="154722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122621566" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -566,31 +561,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/sun.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/rain.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-320">
           <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/homePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -615,14 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/sun.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="9" column="106" lean-forward="false" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/homePage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -635,6 +601,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/sun.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/sun.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="9" column="106" lean-forward="false" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/sun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1024">
+          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/homePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
