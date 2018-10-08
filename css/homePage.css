@@ -108,13 +108,13 @@ html{
 .box{
     position: relative;
     width: 100vw;
-    height: 84vh;
+    height: 80vh;
     /*background: url("https://h5.xizhuopt.com/picture") no-repeat;*/
     background-size: 100% 120%;
 }
 .back-toHome{
     background: url("../image/button2.png") no-repeat;
-    background-size: 100% 112%;
+    background-size: 100% 120%;
     position: absolute;
     left: 3%;
     width: 94%;
@@ -130,5 +130,5 @@ html{
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-    margin: 3.8rem auto;
+    margin: 3.4rem auto;
 }
