@@ -109,7 +109,10 @@ html{
     position: relative;
     width: 100vw;
     height: 80vh;
-    /*background: url("https://h5.xizhuopt.com/picture") no-repeat;*/
+
+}
+.image{
+    background: url("https://h5.xizhuopt.com/picture") no-repeat;
     background-size: 100% 120%;
 }
 .back-toHome{

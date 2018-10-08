@@ -47,8 +47,20 @@ new Vue({
 
         this.isMask = true;
 
-        gameOver1();
-      }
+        let that = this;
+        alert(that.score)
+        $.ajax({
+          type:'post',
+          url:'https://h5.xizhuopt.com/game',
+          data: {
+            type: false,
+            amount: that.score
+          },
+          success: function () {
+            setCode1();
+          }
+        })
+        }
     },1000)
 
       //canvas
@@ -135,6 +147,7 @@ new Vue({
             this.score++
             cxt.clearRect(x,y,o.sunWidth,o.sunHeight)
           }
+
         },1000/30)
 
         }
@@ -144,7 +157,7 @@ new Vue({
 
       let sun = Sun()
 
-      //0.2秒产生一个太阳，最大限200个
+      //0.3秒产生一个太阳，最大限200个
       let timer1 = setInterval(()=>{
         if(this.sunPosition.length == 200){
         return false
@@ -154,7 +167,7 @@ new Vue({
         this.flags.push(true)
         this.sunSpeed.push(sun.speed(one,this.sunPosition.length-1))
       }
-    },200)
+    },300)
 
       //监听画布的点击事件
       myCanvas.addEventListener('touchstart',ev=>{
@@ -178,28 +191,9 @@ new Vue({
 })
 
 
-//游戏结束后，传给馨哥三个参数
-function gameOver1() {
-  var url = 'https://h5.xizhuopt.com/game';
-  let that = this;
-  $.ajax({
-    type:'post',
-    url:url,
-    data: {
-      type: false,
-      amount: that.score
-    },
-    success: function () {
-      setCode1();
-    }
-  })
-}
-
-
 // 游戏结束时，用户同意授权，获取code（在code.js）
 //打开授权页面
 function setCode1() {
-  alert(1);
   var imagePage = 'https://h5.xizhuopt.com/picture';
   var pageUrl = imagePage
     .replace(/[/]/g, "%2f")
