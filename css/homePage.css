@@ -114,6 +114,7 @@ html{
 .image{
     background: url("https://h5.xizhuopt.com/picture") no-repeat;
     background-size: 100% 120%;
+    -webkit-touch-callout:default;
 }
 .back-toHome{
     background: url("../image/button2.png") no-repeat;
