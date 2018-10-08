@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/responsive.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
     <title>种太阳</title>
 </head>
 <body>
 <div id="app">
     <div class="beginBox" v-show='isBegin' @click='go()'>开始</div>
-    <div class="mask" v-show='isMask'>你捐赠了{{score}}个太阳</div>
     <div class="gameBox" :style="screen" v-show='!isBegin'>
         <canvas id="myCanvas">当前浏览器不支持canvas</canvas>
         <div id="canvasBgp"></div>

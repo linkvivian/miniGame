@@ -45,7 +45,7 @@ new Vue({
         clearInterval(timer)
         clearInterval(timer1)
 
-        this.isMask = true
+        this.isMask = true;
 
         gameOver1();
       }
@@ -69,6 +69,7 @@ new Vue({
 
       boxRedraw()
 
+      var sunScore;
       //太阳 返回一个类（？）
       let Sun = ()=>{
         let sunImg = new Image()
@@ -134,8 +135,6 @@ new Vue({
             this.score++
             cxt.clearRect(x,y,o.sunWidth,o.sunHeight)
           }
-
-
         },1000/30)
 
         }
@@ -155,10 +154,13 @@ new Vue({
         this.flags.push(true)
         this.sunSpeed.push(sun.speed(one,this.sunPosition.length-1))
       }
-    },400)
+    },200)
 
       //监听画布的点击事件
       myCanvas.addEventListener('touchstart',ev=>{
+        if(this.number == 0){
+        return false;
+      }
         for(let i=0; i<this.sunPosition.length; i++){
         if(ev.targetTouches[0].clientX>this.sunPosition[i][0] && ev.targetTouches[0].clientX<this.sunPosition[i][0]+sun.sunWidth && ev.targetTouches[0].clientY>this.sunPosition[i][1] && ev.targetTouches[0].clientY<this.sunPosition[i][1]+sun.sunHeight){
           if(this.flags[i]){
@@ -179,25 +181,24 @@ new Vue({
 //游戏结束后，传给馨哥三个参数
 function gameOver1() {
   var url = 'https://h5.xizhuopt.com/game';
+  let that = this;
   $.ajax({
     type:'post',
     url:url,
     data: {
       type: false,
-      amount: this.score
+      amount: that.score
     },
     success: function () {
-      alert(this.score)
-      setCode();
+      setCode1();
     }
   })
 }
 
 
 // 游戏结束时，用户同意授权，获取code（在code.js）
-// https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842（微信开发文档）
-//   打开授权页面
-function setCode() {
+//打开授权页面
+function setCode1() {
   alert(1);
   var imagePage = 'https://h5.xizhuopt.com/picture';
   var pageUrl = imagePage
@@ -206,8 +207,8 @@ function setCode() {
     .replace(/[#]/g, "%23")
     .replace(/[&]/g, "%26")
     .replace(/[=]/g, "%3d");
-    var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +
-    "wxd53f1cc22f392e66" + "&redirect_uri=" + pageUrl +
-    "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect";
+  var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +
+  "wxd53f1cc22f392e66" + "&redirect_uri=" + pageUrl +
+  "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect";
   window.location.href = url;
 }
