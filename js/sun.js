@@ -48,7 +48,7 @@ new Vue({
         this.isMask = true;
 
         let that = this;
-        alert(that.score)
+        // alert(that.score)
         $.ajax({
           type:'post',
           url:'https://h5.xizhuopt.com/game',

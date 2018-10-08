@@ -108,17 +108,17 @@ html{
 .box{
     position: relative;
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
 
 }
 .image{
     background: url("https://h5.xizhuopt.com/picture") no-repeat;
-    background-size: 100% 120%;
+    background-size: 120% 100%;
     -webkit-touch-callout:default;
 }
 .back-toHome{
     background: url("../image/button2.png") no-repeat;
-    background-size: 100% 120%;
+    background-size: 120% 100%;
     position: absolute;
     left: 3%;
     width: 94%;
