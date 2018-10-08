@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf997dcf-e052-4389-8b0f-f5b1b2b14be3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image/rainGod.png" afterPath="$PROJECT_DIR$/image/rainGod.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/homePage.css" afterPath="$PROJECT_DIR$/css/homePage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sun.js" afterPath="$PROJECT_DIR$/js/sun.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,20 +33,6 @@
             <state relative-caret-position="384">
               <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rain.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/rain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5536">
-              <caret line="187" column="10" lean-forward="false" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="10" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1538936711408" expanded="true" signature="2716:2779" ph="..." />
-                <marker date="1538936711408" expanded="true" signature="2828:2854" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,10 +67,24 @@
       <file leaf-file-name="homePage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/homePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="39" column="13" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rainbackground.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/rainbackground.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rainGod.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/rainGod.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -106,13 +105,6 @@
               <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="button2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/button2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -292,12 +284,12 @@
       <workItem from="1538133449421" duration="2414000" />
       <workItem from="1538214648682" duration="36025000" />
       <workItem from="1538740965526" duration="53165000" />
-      <workItem from="1539003812137" duration="1002000" />
+      <workItem from="1539003812137" duration="1869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157597000" />
+    <option name="totallyTimeSpent" value="158464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -461,11 +453,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/rainbackground.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image/bg.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -477,11 +464,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image/button1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/rainGod.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -599,10 +581,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image/rainbackground.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/rainGod.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/homePage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="39" column="13" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding />
         </state>
       </provider>
