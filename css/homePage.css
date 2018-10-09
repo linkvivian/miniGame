@@ -5,14 +5,15 @@
 html{
     font-size: 16px;
     position: relative;
+    overflow: hidden;
 }
 /*首页*/
 .content{
     position: absolute;
     width: 100vw;
-    height: 102vh;
+    height: 100vh;
     background: url("../image/temple.png") no-repeat;
-    background-size: 100% 105%;
+    background-size: 100% 100%;
 }
 .scrollbar{
     position: absolute;
@@ -108,7 +109,7 @@ html{
 .box{
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 92vh;
 
 }
 .image{

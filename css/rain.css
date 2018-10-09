@@ -5,7 +5,6 @@ body,div{
 }
 body{
     overflow: hidden;
-
 }
 #profile{
     position: absolute;
@@ -65,8 +64,32 @@ body{
     z-index: 0;
     /*background: #eee;*/
     position: relative;
-
 }
+
+#hint{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    font-size: 150%;
+    font-weight: 500;
+    color: #fff;
+    background:rgba(0,0,0,0.2);
+}
+#end{
+    border: none;
+    font-size: 100%;
+    font-weight: 500;
+    display: inherit;
+    margin: 80% auto;
+    color: #fff;
+    background: none;
+}
+p {
+    position: relative;
+    top: 30%;
+    left: 22%;
+}
+
 
 
 

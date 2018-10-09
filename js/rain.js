@@ -14,7 +14,6 @@
 // }
 //。。。一开始就。。。
 
-
 var num = 0;
 
 $(document).ready(function () {
@@ -44,27 +43,39 @@ $(document).ready(function () {
   function updateCount(innerHTML) {
     $("#sample").html(innerHTML);
   }
+  count(3, onFirstCountdownOver, updateCount);
   // 第一次倒计时结束时执行的方法
   function onFirstCountdownOver() {
-    count(10, onSecondCountdownOver, updateCount);
+    count(7, onSecondCountdownOver, updateCount);
 
-    $('#guide').empty();
-    var collected = '<div class="has">已收集的雨滴</div>'
-    $('#guide').append(collected);
+    $("#guide").empty();
+    var collected = '<div class="has">已经收集的雨滴</div>';
+    $("#guide").append(collected);
     rain();
   }
   // 第二次倒计时结束时执行的方法
   function onSecondCountdownOver() {
-    // alert("你已求得"+num+"滴雨");
+    //alert("你已求得"+num+"滴雨");
+    //$("#profile").hide();
+    $("#guide").hide();
     clearInterval(rainTimer);
+
     gameOver();
-    // location.reload();
-    //$("#profile").remove();
+
+    var hint = '<div id="hint"><p>你收集到的雨滴数为'+num+'</p ><button id="end">正在生成图片...</button></div>'
+    $("body").append(hint);
+    $("#raindrop").css("top","10%");
+    $("#hint").click(function(){
+      location.reload();
+    })
+    //location.reload();
+
   }
   //isCrash 判断是否在碗里
   //@top：  当前雨滴的top值
   //@left： 当前雨滴的left值
   function isCrash(left,top,height,width) {
+
     var obj = $("#bowl").position();
     var bowLeft = obj.left;
     var bowTop = obj.top;
@@ -72,8 +83,8 @@ $(document).ready(function () {
     top = top+height/2
     if(left>=bowLeft&&left<=(bowLeft+$("#bowl").innerWidth())&&top>=bowTop){
       num++;
-      var rainnum = '<div class="rnum">已收集的雨滴' + num + '</div>';
-      $('.has').html(rainnum);
+      var rainnum = '<div class="rnum">已经收集的雨滴'+num+'</div>';
+      $(".has").html(rainnum);
       return true;
     }
     return false;
@@ -88,7 +99,7 @@ $(document).ready(function () {
     var raindrop = new Raindrop(left, 0, width, width,id);
     id++;
     raindrop.show();
-    raindrop.drop(80);
+    raindrop.drop(35);
   }
 
   //雨滴类
@@ -111,13 +122,13 @@ $(document).ready(function () {
   Raindrop.prototype.drop = function (speed) {
     var that = this;
     var winH = $("#raindrop").height();
-    var op = this.op;
+    var op = this.op
     var maxH = winH - op.height();//雨滴下落的高度，页面高度加上自身高度就能看到完全落到最底部
     // var init = that.top;
 
     this.timer=setInterval(function(){
       if(that.top>=maxH||isCrash(that.left,that.top,that.height,that.width)){
-        // console.log("over");
+        console.log("over");
         op.remove();
         clearInterval(that.timer);
       }
@@ -154,14 +165,14 @@ $(document).ready(function () {
 
   }*/
 
-  $("#bowl").click(function(){
-    move();
-    count(3, onFirstCountdownOver, updateCount);
-  });
+  //$("#bowl").click(function(){
+  //move();
+  //  count(3, onFirstCountdownOver, updateCount);
+
+  //})
   $("#bowl").click(function(){
     $("#bowl").unbind();
   })
-
 
   //游戏结束时，跳转到对应链接，生成图片
   function gameOver() {
@@ -179,7 +190,7 @@ $(document).ready(function () {
     }
   })
 }
-});
+
 
 // 游戏结束时，用户同意授权，获取code（在code.js）
 // https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842（微信开发文档）
@@ -197,7 +208,7 @@ function setCode() {
     "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect";
   window.location.href = url;
 }
-
+});
 
 
 
