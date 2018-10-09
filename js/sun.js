@@ -67,7 +67,6 @@ new Vue({
             setCode1();
           }
         })
-      }
 
       }
     },1000)
@@ -204,6 +203,7 @@ new Vue({
   },
 })
 
+
 // 游戏结束时，用户同意授权，获取code（在code.js）
 //打开授权页面
 function setCode1() {
@@ -215,7 +215,8 @@ function setCode1() {
     .replace(/[&]/g, "%26")
     .replace(/[=]/g, "%3d");
   var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +
-  "wxd53f1cc22f392e66" + "&redirect_uri=" + pageUrl +
-  "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect";
+    "wxd53f1cc22f392e66" + "&redirect_uri=" + pageUrl +
+    "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect";
   window.location.href = url;
 }
+
