@@ -109,7 +109,7 @@ html{
 .box{
     position: relative;
     width: 100vw;
-    height: 92vh;
+    height: 91vh;
 
 }
 .image{
@@ -123,10 +123,10 @@ html{
 .back-toHome{
     background: url("../image/button2.png") no-repeat;
     position: absolute;
-    left: 3%;
     width: 94%;
-    height: 7rem;
-    margin: -3em auto;
+    height: 8vh;
+    line-height: 8vh;
+    margin: 1vh auto;
 }
 .back-toHome a{
     display: inline-block;
