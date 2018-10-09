@@ -14,7 +14,6 @@
     <div class="mask" v-show='isMask'>你捐赠了{{score}}个太阳<br /><br />正在生成图片...</div>
     <div class="gameBox" :style="screen">
         <div class="beginBox"@click='go()' v-show='isBegin'>点击屏幕开始<br />捐赠太阳</div>
-
         <canvas id="myCanvas">当前浏览器不支持canvas</canvas>
         <div id="canvasBgp"></div>
         <div class="numberBox" v-show='!isBegin' onselectstart="return false">{{number}}</div>

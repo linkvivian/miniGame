@@ -1,4 +1,3 @@
-
 new Vue({
   el: '#app',
   data(){
@@ -36,7 +35,7 @@ new Vue({
     // let myCanvas = document.getElementById("myCanvas")
     let cxt = myCanvas.getContext("2d")
     let boxImg = new Image()
-    boxImg.src = './img/box3.png'
+    boxImg.src = '../image/box3.png'
     boxImg.onload = function(){
       cxt.drawImage(boxImg, canvasWidth-150,canvasHeight-114)
     }
@@ -54,6 +53,7 @@ new Vue({
         clearInterval(timer1)
 
         this.isMask = true
+
         let that = this;
         // alert(that.score)
         $.ajax({
@@ -70,7 +70,7 @@ new Vue({
       }
 
       }
-    },1000);
+    },1000)
 
       //canvas
       let myCanvas = document.getElementById("myCanvas")

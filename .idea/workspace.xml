@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf997dcf-e052-4389-8b0f-f5b1b2b14be3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/rainbg.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/军训.rar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/image/bg.png" afterPath="$PROJECT_DIR$/image/sunbg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/homePage.css" afterPath="$PROJECT_DIR$/css/homePage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/rain.css" afterPath="$PROJECT_DIR$/css/rain.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sun.css" afterPath="$PROJECT_DIR$/css/sun.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/gameOver.html" afterPath="$PROJECT_DIR$/html/gameOver.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/sun.html" afterPath="$PROJECT_DIR$/html/sun.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sun.js" afterPath="$PROJECT_DIR$/js/sun.js" />
     </list>
@@ -28,8 +20,8 @@
       <file leaf-file-name="sun.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/sun.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="704">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,8 +57,8 @@
       <file leaf-file-name="sun.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/sun.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+            <state relative-caret-position="-58">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,14 +149,14 @@
       <find>第一次</find>
       <find>updateCount</find>
       <find>bowl</find>
-      <find>game</find>
       <find>gameOver</find>
       <find>num</find>
       <find>image</find>
       <find>你收集</find>
       <find>hint</find>
-      <find>png</find>
       <find>that</find>
+      <find>png</find>
+      <find>game</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,8 +184,8 @@
         <option value="$PROJECT_DIR$/html/gameOver.html" />
         <option value="$PROJECT_DIR$/css/homePage.css" />
         <option value="$PROJECT_DIR$/css/sun.css" />
-        <option value="$PROJECT_DIR$/js/sun.js" />
         <option value="$PROJECT_DIR$/html/sun.html" />
+        <option value="$PROJECT_DIR$/js/sun.js" />
       </list>
     </option>
   </component>
@@ -299,12 +291,12 @@
       <workItem from="1538214648682" duration="36025000" />
       <workItem from="1538740965526" duration="53165000" />
       <workItem from="1539003812137" duration="9363000" />
-      <workItem from="1539082913584" duration="1975000" />
+      <workItem from="1539082913584" duration="2156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167933000" />
+    <option name="totallyTimeSpent" value="168114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -591,16 +583,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/sun.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        <state relative-caret-position="-58">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/sun.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        <state relative-caret-position="704">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
