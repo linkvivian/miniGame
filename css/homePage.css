@@ -106,19 +106,17 @@ html{
 }
 
 /*生成图片页*/
-/*.imgBox{*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    /*width: 100vw;*/
-    /*height:100vh;*/
-/*}*/
-/*.saveImg{*/
-    /*display: inline-block;*/
-    /*height: 100%;*/
-    /*width: auto;*/
-    /*-webkit-touch-callout:default;*/
-/*}*/
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.saveImg{
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    -webkit-touch-callout:default;
+}
 /*.back-toHome{*/
     /*background: url("../image/button2.png") no-repeat;*/
     /*position: absolute;*/
