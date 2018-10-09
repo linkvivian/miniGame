@@ -110,7 +110,7 @@ html{
     display: inline-block;
     width: 100vw;
     height:100vh;
-    background: url("https://h5.xizhuopt.com/picture") no-repeat;
+    background: url("https://h5.xizhuopt.com/savePicture") no-repeat;
     background-size: cover;
     -webkit-touch-callout:default;
 }
