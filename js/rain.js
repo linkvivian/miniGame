@@ -99,7 +99,7 @@ $(document).ready(function () {
     var raindrop = new Raindrop(left, 0, width, width,id);
     id++;
     raindrop.show();
-    raindrop.drop(35);
+    raindrop.drop(40);
   }
 
   //雨滴类

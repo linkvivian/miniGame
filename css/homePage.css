@@ -107,15 +107,13 @@ html{
 
 /*生成图片页*/
 .imgBox{
-    position: relative;
     width: 100vw;
     height:100vh;
 }
 .saveImg{
-    position: absolute;
     display: inline-block;
-    width: auto;
     height: 100%;
+    width: auto;
     margin: 0 auto;
     -webkit-touch-callout:default;
 
