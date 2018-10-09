@@ -1,4 +1,3 @@
-//vue模板
 
 new Vue({
   el: '#app',
@@ -33,6 +32,15 @@ new Vue({
     }
     window.onresize()
 
+    //功德箱
+    // let myCanvas = document.getElementById("myCanvas")
+    let cxt = myCanvas.getContext("2d")
+    let boxImg = new Image()
+    boxImg.src = './img/box3.png'
+    boxImg.onload = function(){
+      cxt.drawImage(boxImg, canvasWidth-150,canvasHeight-114)
+    }
+
   },
   methods:{
     go(){
@@ -45,8 +53,7 @@ new Vue({
         clearInterval(timer)
         clearInterval(timer1)
 
-        this.isMask = true;
-
+        this.isMask = true
         let that = this;
         // alert(that.score)
         $.ajax({
@@ -60,8 +67,10 @@ new Vue({
             setCode1();
           }
         })
-        }
-    },1000)
+      }
+
+      }
+    },1000);
 
       //canvas
       let myCanvas = document.getElementById("myCanvas")
@@ -71,6 +80,7 @@ new Vue({
       let canvasHeight = Math.floor(document.documentElement.clientHeight);
 
       //box重画
+
       function boxRedraw(){
         let boxImg = new Image()
         boxImg.src = '../image/box3.png'
@@ -81,7 +91,6 @@ new Vue({
 
       boxRedraw()
 
-      var sunScore;
       //太阳 返回一个类（？）
       let Sun = ()=>{
         let sunImg = new Image()
@@ -125,6 +134,7 @@ new Vue({
             if(this.sunPosition[i][0]!=-1){
               cxt.drawImage(sunImg, this.sunPosition[i][0], this.sunPosition[i][1])
             }
+
           }
         }
 
@@ -147,6 +157,7 @@ new Vue({
             this.score++
             cxt.clearRect(x,y,o.sunWidth,o.sunHeight)
           }
+
 
         },1000/30)
 
@@ -171,16 +182,19 @@ new Vue({
 
       //监听画布的点击事件
       myCanvas.addEventListener('touchstart',ev=>{
-        if(this.number == 0){
-        return false;
+        //add
+        if(this.number==0){
+        return false
       }
-        for(let i=0; i<this.sunPosition.length; i++){
+
+      for(let i=0; i<this.sunPosition.length; i++){
         if(ev.targetTouches[0].clientX>this.sunPosition[i][0] && ev.targetTouches[0].clientX<this.sunPosition[i][0]+sun.sunWidth && ev.targetTouches[0].clientY>this.sunPosition[i][1] && ev.targetTouches[0].clientY<this.sunPosition[i][1]+sun.sunHeight){
           if(this.flags[i]){
             sun.move(this.sunPosition[i],i)
             this.flags[i] = false
             return false
           }
+
         }
       }
 
@@ -189,7 +203,6 @@ new Vue({
 
   },
 })
-
 
 // 游戏结束时，用户同意授权，获取code（在code.js）
 //打开授权页面
