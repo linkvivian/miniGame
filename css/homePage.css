@@ -107,6 +107,9 @@ html{
 
 /*生成图片页*/
 .imgBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100vw;
     height:100vh;
 }
@@ -114,9 +117,7 @@ html{
     display: inline-block;
     height: 100%;
     width: auto;
-    margin: 0 auto;
     -webkit-touch-callout:default;
-
 }
 /*.back-toHome{*/
     /*background: url("../image/button2.png") no-repeat;*/
