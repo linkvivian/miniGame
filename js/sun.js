@@ -219,4 +219,3 @@ function setCode1() {
     "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect";
   window.location.href = url;
 }
-

@@ -9,8 +9,23 @@
     <title>长按保存你的结果图片</title>
 </head>
 <body>
-    <img alt="saveImg" class="saveImg" src="https://h5.xizhuopt.com/savePicture">
+<img src="" alt="" class="saveImg">
 <!--<div class="back-toHome"><a href="homePage.html">返回首页</a></div>-->
 <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    window.onload = function () {
+      showPic();
+    }
+    
+    function showPic() {
+      $.ajax({
+        type:'post',
+        url:'https://h5.xizhuopt.com/savePicture',
+        success: function (result) {
+          $('.saveImg').src = result;
+        }
+      })
+    }
+</script>
 </body>
 </html>
