@@ -15,13 +15,14 @@
 <script>
     window.onload = function () {
       showPic();
-    }
+    };
     
     function showPic() {
       $.ajax({
         type:'post',
         url:'https://h5.xizhuopt.com/savePicture',
         success: function (result) {
+//          alert(result)
           $('.saveImg').src = result;
         }
       })
